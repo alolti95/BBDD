@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user1.bbdd.MainActivity">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_below="@+id/txtID"
+            android:layout_alignStart="@+id/txtID"
+            android:id="@+id/editID" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editTipo"
+            android:layout_below="@+id/txtTipo"
+            android:layout_alignStart="@+id/txtTipo" />
+
+        <TextView
+            android:text="Tipo:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTipo"
+            android:layout_below="@+id/editID"
+            android:layout_alignStart="@+id/editID" />
+
+        <TextView
+            android:text="Marca:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTipo"
+            android:layout_alignStart="@+id/editTipo"
+            android:id="@+id/txtMarca" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_below="@+id/txtMarca"
+            android:layout_alignEnd="@+id/editTipo"
+            android:id="@+id/editMarca" />
+
+        <TextView
+            android:text="Nom:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editMarca"
+            android:layout_alignStart="@+id/editMarca"
+            android:id="@+id/txtNom" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:layout_below="@+id/txtNom"
+            android:layout_alignEnd="@+id/editMarca"
+            android:id="@+id/editNom" />
+
+        <TextView
+            android:text="Preu:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editNom"
+            android:layout_alignStart="@+id/editNom"
+            android:id="@+id/txtPreu" />
+
+        <Button
+            android:text="Consultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnConsultar"
+            android:layout_alignBaseline="@+id/btnEliminar"
+            android:layout_alignBottom="@+id/btnEliminar"
+            android:layout_alignEnd="@+id/btnActualitzar" />
+
+        <TextView
+            android:text="Producte:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:id="@+id/txtProducte"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:text="ID producte:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:id="@+id/txtID"
+            android:layout_below="@+id/txtProducte"
+            android:layout_alignStart="@+id/txtProducte" />
+
+        <Button
+            android:text="Eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEliminar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/btnInsertar" />
+
+        <Button
+            android:text="Actualitzar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="19dp"
+            android:id="@+id/btnActualitzar"
+            android:layout_below="@+id/editPreu"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editPreu"
+            android:layout_below="@+id/txtPreu"
+            android:layout_alignStart="@+id/txtPreu" />
+
+        <Button
+            android:text="Insertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInsertar"
+            android:layout_below="@+id/editPreu"
+            android:layout_alignStart="@+id/editPreu" />
+</RelativeLayout>
+
